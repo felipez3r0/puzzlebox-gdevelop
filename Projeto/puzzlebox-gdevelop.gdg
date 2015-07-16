@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<project firstLayout="">
+    <gdVersion build="80" major="3" minor="6" revision="0" />
+    <properties linuxExecutableFilename="" macExecutableFilename="" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
+        <name>Puzzle Boxes</name>
+        <author>Felipe Do E. Santo</author>
+        <windowWidth>800</windowWidth>
+        <windowHeight>600</windowHeight>
+        <latestCompilationDirectory></latestCompilationDirectory>
+        <maxFPS>60</maxFPS>
+        <minFPS>10</minFPS>
+        <verticalSync>false</verticalSync>
+        <extensions>
+            <extension name="BuiltinObject" />
+            <extension name="BuiltinAudio" />
+            <extension name="BuiltinVariables" />
+            <extension name="BuiltinTime" />
+            <extension name="BuiltinMouse" />
+            <extension name="BuiltinKeyboard" />
+            <extension name="BuiltinJoystick" />
+            <extension name="BuiltinCamera" />
+            <extension name="BuiltinWindow" />
+            <extension name="BuiltinFile" />
+            <extension name="BuiltinNetwork" />
+            <extension name="BuiltinScene" />
+            <extension name="BuiltinAdvanced" />
+            <extension name="Sprite" />
+            <extension name="BuiltinCommonInstructions" />
+            <extension name="BuiltinCommonConversions" />
+            <extension name="BuiltinStringInstructions" />
+            <extension name="BuiltinMathematicalTools" />
+            <extension name="BuiltinExternalLayouts" />
+            <extension name="TiledSpriteObject" />
+            <extension name="DraggableAutomatism" />
+            <extension name="PhysicsAutomatism" />
+            <extension name="TextObject" />
+        </extensions>
+        <platforms>
+            <platform name="GDevelop JS platform" />
+        </platforms>
+        <currentPlatform>GDevelop JS platform</currentPlatform>
+    </properties>
+    <resources>
+        <resources>
+            <resource alwaysLoaded="false" file="box_body2-sheet0.png" kind="image" name="box_body2-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_body-sheet0.png" kind="image" name="box_body-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_head2-sheet0.png" kind="image" name="box_head2-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_head-sheet0.png" kind="image" name="box_head-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_html2-sheet0.png" kind="image" name="box_html2-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_html-sheet0.png" kind="image" name="box_html-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_p2-sheet0.png" kind="image" name="box_p2-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_p-sheet0.png" kind="image" name="box_p-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_title2-sheet0.png" kind="image" name="box_title2-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="box_title-sheet0.png" kind="image" name="box_title-sheet0.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="tiledbackground.png" kind="image" name="tiledbackground.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="block.png" kind="image" name="block.png" smoothed="true" userAdded="true" />
+            <resource alwaysLoaded="false" file="fisica-sheet0.png" kind="image" name="fisica-sheet0.png" smoothed="true" userAdded="true" />
+        </resources>
+        <resourceFolders />
+    </resources>
+    <objects />
+    <objectsGroups />
+    <variables />
+    <layouts>
+        <layout b="255" disableInputWhenNotFocused="true" mangledName="Game" name="Game" oglFOV="90.000000" oglZFar="500.000000" oglZNear="1.000000" r="255" standardSortMethod="false" stopSoundsOnStartup="true" title="Puzzle Boxes" v="255">
+            <uiSettings associatedLayout="" grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="false" zoomFactor="0.500000" />
+            <objectsGroups />
+            <variables />
+            <instances>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="340.000000" y="73.499969" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="281.000000" y="246.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="5.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="430.000000" y="205.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="3.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="533.000000" y="117.499962" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="2.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="149.000000" y="135.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="1.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="26.000000" y="252.499939" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="6.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="557.000000" y="343.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="7.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="163.000000" y="335.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="9.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="255.000000" y="449.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="4.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="610.000000" layer="Fundo" locked="false" name="Fundo" width="806.000000" x="-2.000000" y="-2.500000" zOrder="1">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="32.000000" layer="" locked="false" name="Chao" width="826.000000" x="-18.000002" y="593.000000" zOrder="2">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="68.000000" layer="" locked="false" name="Fisica" width="66.000000" x="726.000000" y="7.999994" zOrder="2">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="68.000000" layer="" locked="false" name="FisicaOff" width="66.000000" x="7.999973" y="7.000000" zOrder="3">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="InfoFisica" width="0.000000" x="290.000000" y="14.999987" zOrder="4">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="60.000000" layer="" locked="false" name="Bloco" width="90.000000" x="359.000000" y="349.499969" zOrder="1">
+                    <numberProperties>
+                        <property name="animation" value="8.000000" />
+                    </numberProperties>
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+            </instances>
+            <objects>
+                <object name="Bloco" type="Sprite">
+                    <variables />
+                    <automatisms>
+                        <automatism name="Draggable" type="DraggableAutomatism::Draggable" />
+                        <automatism angularDamping="0.100000" autoResizing="false" averageFriction="0.800000" averageRestitution="0.000000" coordsList="" dynamic="true" fixedRotation="true" isBullet="true" linearDamping="0.100000" massDensity="1.000000" name="Physics" polygonHeight="200.000000" polygonWidth="200.000000" positioning="OnCenter" shapeType="Box" type="PhysicsAutomatism::PhysicsAutomatism" />
+                    </automatisms>
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_html-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_html2-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_head-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_head2-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_title-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_title2-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_body-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_body2-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_p-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="box_p2-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="40.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="80.000000" />
+                                                    <vertice x="0.000000" y="80.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object height="32.000000" name="Fundo" texture="tiledbackground.png" type="TiledSpriteObject::TiledSprite" width="32.000000">
+                    <variables />
+                    <automatisms />
+                </object>
+                <object height="32.000000" name="Chao" texture="block.png" type="TiledSpriteObject::TiledSprite" width="32.000000">
+                    <variables />
+                    <automatisms>
+                        <automatism angularDamping="0.100000" autoResizing="false" averageFriction="0.800000" averageRestitution="0.000000" coordsList="" dynamic="false" fixedRotation="true" isBullet="false" linearDamping="0.100000" massDensity="1.000000" name="Physics" polygonHeight="200.000000" polygonWidth="200.000000" positioning="OnCenter" shapeType="Box" type="PhysicsAutomatism::PhysicsAutomatism" />
+                    </automatisms>
+                </object>
+                <object name="Fisica" type="Sprite">
+                    <variables />
+                    <automatisms />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="fisica-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="64.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="128.000000" />
+                                                    <vertice x="0.000000" y="128.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="FisicaOff" type="Sprite">
+                    <variables />
+                    <automatisms />
+                    <animations>
+                        <animation useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="fisica-sheet0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="64.000000" y="64.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="0.000000" />
+                                                    <vertice x="128.000000" y="128.000000" />
+                                                    <vertice x="0.000000" y="128.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object bold="true" italic="false" name="InfoFisica" smoothed="true" type="TextObject::Text" underlined="false">
+                    <variables />
+                    <automatisms />
+                    <string>Física desligada</string>
+                    <font></font>
+                    <characterSize>25</characterSize>
+                    <color b="0" g="0" r="0" />
+                </object>
+            </objects>
+            <events>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="DepartScene" />
+                            <parameters>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action>
+                            <type inverted="false" value="Opacity" />
+                            <parameters>
+                                <parameter>FisicaOff</parameter>
+                                <parameter>=</parameter>
+                                <parameter>60</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                        <action>
+                            <type inverted="false" value="ActivateAutomatism" />
+                            <parameters>
+                                <parameter>Bloco</parameter>
+                                <parameter>Physics</parameter>
+                                <parameter>no</parameter>
+                            </parameters>
+                            <subActions />
+                        </action>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Comment</type>
+                    <color b="109" g="230" r="255" textB="0" textG="0" textR="0" />
+                    <comment>Ativa e desativa a física para permitir o movimento dos blocos</comment>
+                    <comment2></comment2>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="SourisSurObjet" />
+                            <parameters>
+                                <parameter>Fisica</parameter>
+                                <parameter></parameter>
+                                <parameter>yes</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <events>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <condition>
+                                    <type inverted="false" value="SourisBouton" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Left</parameter>
+                                    </parameters>
+                                    <subConditions />
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action>
+                                    <type inverted="false" value="ActivateAutomatism" />
+                                    <parameters>
+                                        <parameter>Bloco</parameter>
+                                        <parameter>Physics</parameter>
+                                        <parameter>yes</parameter>
+                                    </parameters>
+                                    <subActions />
+                                </action>
+                                <action>
+                                    <type inverted="false" value="TextObject::String" />
+                                    <parameters>
+                                        <parameter>InfoFisica</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>&quot;Física ligada&quot;</parameter>
+                                    </parameters>
+                                    <subActions />
+                                </action>
+                            </actions>
+                            <events />
+                        </event>
+                    </events>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <condition>
+                            <type inverted="false" value="SourisSurObjet" />
+                            <parameters>
+                                <parameter>FisicaOff</parameter>
+                                <parameter></parameter>
+                                <parameter>yes</parameter>
+                                <parameter></parameter>
+                            </parameters>
+                            <subConditions />
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <events>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <condition>
+                                    <type inverted="false" value="SourisBouton" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Left</parameter>
+                                    </parameters>
+                                    <subConditions />
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action>
+                                    <type inverted="false" value="ActivateAutomatism" />
+                                    <parameters>
+                                        <parameter>Bloco</parameter>
+                                        <parameter>Physics</parameter>
+                                        <parameter>no</parameter>
+                                    </parameters>
+                                    <subActions />
+                                </action>
+                                <action>
+                                    <type inverted="false" value="TextObject::String" />
+                                    <parameters>
+                                        <parameter>InfoFisica</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>&quot;Física desligada&quot;</parameter>
+                                    </parameters>
+                                    <subActions />
+                                </action>
+                            </actions>
+                            <events />
+                        </event>
+                    </events>
+                </event>
+            </events>
+            <layers>
+                <layer name="Fundo" visibility="true">
+                    <cameras>
+                        <camera defaultSize="true" defaultViewport="true" height="0.000000" viewportBottom="1.000000" viewportLeft="0.000000" viewportRight="1.000000" viewportTop="0.000000" width="0.000000" />
+                    </cameras>
+                </layer>
+                <layer name="" visibility="true">
+                    <cameras>
+                        <camera defaultSize="true" defaultViewport="true" height="0.000000" viewportBottom="1.000000" viewportLeft="0.000000" viewportRight="1.000000" viewportTop="0.000000" width="0.000000" />
+                    </cameras>
+                </layer>
+            </layers>
+            <automatismsSharedData>
+                <automatismSharedData gravityX="0.000000" gravityY="10.000000" name="Physics" scaleX="100.000000" scaleY="100.000000" type="PhysicsAutomatism::PhysicsAutomatism" />
+            </automatismsSharedData>
+        </layout>
+    </layouts>
+    <externalEvents />
+    <externalLayouts />
+    <externalSourceFiles />
+</project>
